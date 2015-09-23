@@ -6,6 +6,7 @@
 </head>
 <body>
 <button type="button" onclick="alert('Tere maailm!')">Tere maailm!</button>
+<a href="http://khk.ee/" onclick="alert('Tere maailm!')">Tere maailm!</a>
 </body>
 </html>
 <!--
