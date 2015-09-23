@@ -52,6 +52,9 @@
         $(document).on("contextmenu",function(){
             return false;
         });
+    //lubamine
+    $("#allow_click").click(function () {
+        $(document).unbind();
 </script>
 </body>
 </html>
