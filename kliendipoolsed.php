@@ -26,12 +26,28 @@
     });
 </script>-->
 <img id="meow" src="media/mjau.jpg">
+<span class="buttons">
+    <button id="b1">Blue</button>
+    <button id="b2">Red</button>
+    <button id="b3">Green</button>
+</span>
 <script>
     $(document).ready(function(){
         $('#meow').click(function(){
             $(this).replaceWith('<img src="media/koer.png">');
         });
     });
+    //Nuppude funktsioon
+    $('#b1').click(function () {
+        $('body').css('backgroundColor', $('#b1').text());
+    });
+    $('#b2').click(function () {
+        $('body').css('backgroundColor', $('#b2').text());
+    });
+    $('#b3').click(function () {
+        $('body').css('backgroundColor', $('#b3').text());
+    });
+    //nuppude lõpp
 </script>
 </body>
 </html>
