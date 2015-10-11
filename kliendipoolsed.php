@@ -48,13 +48,6 @@
         $('body').css('backgroundColor', $('#b3').text());
     });
     //nuppude lõpp
-    //parema kliki keelamine
-        $(document).on("contextmenu",function(){
-            return false;
-        });
-    //lubamine
-    $("#allow_click").click(function () {
-        $(document).unbind();
 </script>
 </body>
 </html>
