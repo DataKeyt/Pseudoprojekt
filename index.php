@@ -1,18 +1,14 @@
 <?php
-
 //Connect database
-require_once 'config.php';
-$db = mysqli_connect(DATABASE_HOSTNAME, DATABASE_USERNAME, DATABASE_PASSWORD, DATABASE_DATABASE) or die(mysqli_error($db));
-mysqli_query($db, "SET NAMES 'utf8'");
-
+//$db = mysqli_connect('localhost', 'root', '', 'blog') or die(mysqli_error($db));
+//mysqli_query($db, "SET NAMES 'utf8'");
+require 'database.php';
 //Retrieve data from database
 $q = mysqli_query($db, "SELECT * FROM posts NATURAL JOIN authors");
-
-$posts = array();
+$posts = Array();
 while ($row = mysqli_fetch_assoc($q)) {
     $posts[] = $row;
 }
-
 ?>
 
 <!DOCTYPE html>
