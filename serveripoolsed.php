@@ -7,5 +7,6 @@
  */
 $firstname = "Rete-Keyt";
 $lastname = "Uibo";
+$age = 19;
 
-echo $firstname . " " . $lastname;
+echo $firstname . " " . $lastname . " ($age)";
