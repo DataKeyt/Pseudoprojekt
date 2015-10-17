@@ -25,11 +25,18 @@ if (in_array(substr($keyt->firstname, 0, 1), $vowels)) {
     $eesnimi_algab_vokaaliga = false;
 }
 
+//Floating sum
+$floating1 = 1.23;
+$floating2 = 2.34;
+$float_sum = $floating1 + $floating2;
+
+echo "<p>" . $float_sum . "</p>";
+
 //Condition
 if ($eesnimi_algab_vokaaliga) {
     echo "<p>Nimi algab vokaaliga</p>";
 };
 
-echo "<p>" . $keyt->firstname . " " . $keyt->lastname . " (" . $keyt->age . ") " . $keyt->sex . "</p>";
+// echo "<p>" . $keyt->firstname . " " . $keyt->lastname . " (" . $keyt->age . ") " . $keyt->sex . "</p>";
 
 ?>
