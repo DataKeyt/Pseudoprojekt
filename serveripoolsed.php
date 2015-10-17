@@ -6,11 +6,11 @@
  * Time: 13:41
  */
 //Massiiv
-$person = array(
+/*$person = array(
     "firstname" => "Rete-Keyt",
     "lastname" => "Uibo",
     "age" => "19"
-);
+); */
 //Boolean
 $eesnimi_algab_vokaaliga = false;
 
@@ -19,6 +19,16 @@ if ($eesnimi_algab_vokaaliga) {
     echo "<p>Nimi algab vokaaliga</p>";
 };
 
-echo "<p>" . $person['firstname'] . " " . $person['lastname'] . " (" . $person['age'] . ")</p>";
+class isik
+{
+    var $firstname = "Rete-Keyt";
+    var $lastname = "Uibo";
+    var $age = 19;
+    var $sex = "<br /> Female";
+}
+
+$keyt = new isik;
+
+echo "<p>" . $keyt->firstname . " " . $keyt->lastname . " (" . $keyt->age . ") " . $keyt->sex . "</p>";
 
 ?>
