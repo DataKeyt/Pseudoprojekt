@@ -5,19 +5,7 @@
  * Date: 17.10.2015
  * Time: 13:41
  */
-//Massiiv
-/*$person = array(
-    "firstname" => "Rete-Keyt",
-    "lastname" => "Uibo",
-    "age" => "19"
-); */
-//Boolean
-$eesnimi_algab_vokaaliga = false;
 
-//Condition
-if ($eesnimi_algab_vokaaliga) {
-    echo "<p>Nimi algab vokaaliga</p>";
-};
 
 class isik
 {
@@ -28,6 +16,19 @@ class isik
 }
 
 $keyt = new isik;
+
+//Vowels function
+$vowels = array('A', 'E', 'I', 'O', 'U', 'Õ', 'Ä', 'Ö', 'Ü', 'a', 'e', 'i', 'o', 'u', 'õ', 'ä', 'ö', 'ü');
+if (in_array(substr($keyt->firstname, 0, 1), $vowels)) {
+    $eesnimi_algab_vokaaliga = true;
+} else {
+    $eesnimi_algab_vokaaliga = false;
+}
+
+//Condition
+if ($eesnimi_algab_vokaaliga) {
+    echo "<p>Nimi algab vokaaliga</p>";
+};
 
 echo "<p>" . $keyt->firstname . " " . $keyt->lastname . " (" . $keyt->age . ") " . $keyt->sex . "</p>";
 
