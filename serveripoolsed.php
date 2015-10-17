@@ -30,7 +30,7 @@ $floating1 = 1.23;
 $floating2 = 2.34;
 $float_sum = $floating1 + $floating2;
 
-echo "<p>" . $float_sum . "</p>";
+// echo "<p>" . $float_sum . "</p>";
 
 //Condition
 if ($eesnimi_algab_vokaaliga) {
@@ -40,5 +40,19 @@ if ($eesnimi_algab_vokaaliga) {
 
 // echo "<p>" . $keyt->firstname . " " . $keyt->lastname . " (" . $keyt->age . ") " . $keyt->sex . "</p>";
 
-echo $_GET['koer'];
+
+if (!empty($_POST['kass'])) {
+    echo "Kass oli: " . $_POST['kass'];
+}
 ?>
+
+<form action="?" method="post">
+
+    Name <input name="kass"><br>
+
+    <input type="submit" value="?">
+
+</form>
+
+
+

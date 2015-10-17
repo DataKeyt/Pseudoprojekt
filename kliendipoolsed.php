@@ -30,14 +30,17 @@
     <button id="b1">Blue</button>
     <button id="b2">Red</button>
     <button id="b3">Green</button>
-    <button id="kiisu">Toggle</button>
+    <button id="kiisu">Toggle Cat</button>
 </span>
+
 <script>
+
     $(document).ready(function(){
         $('#meow').click(function(){
             $(this).replaceWith('<img src="media/koer.png">');
         });
     });
+
     //Nuppude funktsioon
     $('#b1').click(function () {
         $('body').css('backgroundColor', $('#b1').text());
@@ -49,10 +52,10 @@
         $('body').css('backgroundColor', $('#b3').text());
     });
 
-    //Toggle pilt
+    //Toggle
 
     $('#kiisu').click(function () {
-        $("img").toggle();
+        $('#meow').toggle();
     });
 
 
