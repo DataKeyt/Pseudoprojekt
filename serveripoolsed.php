@@ -5,15 +5,15 @@
  * Date: 17.10.2015
  * Time: 13:41
  */
-
-//Strings
-$firstname = "Rete-Keyt";
-$lastname = "Uibo";
-
-//Integer
-$age = 19;
-
-//boolean
+//Massiiv
+$person = array(
+    "firstname" => "Rete-Keyt",
+    "lastname" => "Uibo",
+    "age" => "19"
+);
+//Boolean
 $eesnimi_algab_vokaaliga = false;
 
-echo $firstname . " " . $lastname . " ($age)";
+echo "<p>" . $person['firstname'] . " " . $person['lastname'] . " (" . $person['age'] . ")</p>";
+
+?>
